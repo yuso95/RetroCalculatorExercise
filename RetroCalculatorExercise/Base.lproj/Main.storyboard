@@ -165,6 +165,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-aA-EHl">
                                         <state key="normal" backgroundImage="clear"/>
                                         <connections>
+                                            <action selector="clearBTNPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cg7-MG-ujS"/>
                                             <action selector="onBTNPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VnK-yS-KUw"/>
                                         </connections>
                                     </button>

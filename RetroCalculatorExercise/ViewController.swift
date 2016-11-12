@@ -65,7 +65,18 @@ class ViewController: UIViewController {
         
         processOperation(currentOperation)
     }
-
+    
+    // Clear BTN 
+    
+    @IBAction func clearBTNPressed(_ sender: UIButton) {
+        
+        outputLBL.text = "0"
+        leftValueSTR = ""
+        rightValueSTR = ""
+        result = ""
+        runningNumber = ""
+        currentOperation = Operation.empty
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -119,9 +130,10 @@ class ViewController: UIViewController {
                 leftValueSTR = result
                 
                 outputLBL.text = result
+                
+                currentOperation = operation
             }
             
-            currentOperation = operation
         } else {
             
             leftValueSTR = runningNumber
